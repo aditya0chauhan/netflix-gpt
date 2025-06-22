@@ -29,6 +29,7 @@
 - Update Store with trailer Video data
  - Embadded the YouTube Video and Make it Autoplay and Mute 
 - Tailwind Classes to Make Main Container look Awosome 
+- Build Secoundry Component
 
 # Features
 - Login / Signup

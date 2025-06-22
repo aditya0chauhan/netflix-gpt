@@ -1,21 +1,18 @@
-import { useRef, useState } from "react";
 import { BG_image, PHOTO_URL } from "../utils/constent";
+import { useRef, useState } from "react";
 import Header from "./Header";
 import { chackValidData } from "../utils/validate";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
-
 const Login = () => {
     const [isSignInForm, setIsSignInForm] = useState(true);
     const [errorMessage, setErrorMessage] = useState(null);
     const dispatch = useDispatch()
-
     const name = useRef(null)
     const email = useRef(null)
     const password = useRef(null)
-
     const handleButtonClick = () => {
         const message = chackValidData(
             email.current.value,
@@ -33,7 +30,7 @@ const Login = () => {
 
                     updateProfile(user, {
                         displayName: name.current.value,
-                        photoURL: PHOTO_URL
+                        photoURL: `https://occ-0-6247-2186.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABTZ2zlLdBVC05fsd2YQAR43J6vB1NAUBOOrxt7oaFATxMhtdzlNZ846H3D8TZzooe2-FT853YVYs8p001KVFYopWi4D4NXM.png?r=229}`
                     })
                         .then(() => {
                                 const { uid, email, displayName, photoURL } = auth.currentUser;
