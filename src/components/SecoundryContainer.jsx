@@ -10,7 +10,6 @@ const SecoundryContainer = ( ) => {
             <MovieList  title={"Top Rated Movies"} movies={movies.TopRatedMovies}/>
             <MovieList  title={"Popular Movies"} movies={movies.popularMovies}/>
             <MovieList  title={"Upcoming Movies"} movies={movies.UpcomingMovies}/>
-            <MovieList  title={"Horror Movies"} movies={movies.nowPlayingMovies}/>
             {/* 
             Movie List - popular 
                 movie cards * n

@@ -30,6 +30,11 @@
  - Embadded the YouTube Video and Make it Autoplay and Mute 
 - Tailwind Classes to Make Main Container look Awosome 
 - Build Secoundry Component
+- GPT Search Feature
+- GPT Search Page
+- GPT Search Bar
+- (BONUS) Multi-language Feature in our app
+- Intigrate GPT APIS(Get OpenAi Key)
 
 # Features
 - Login / Signup
